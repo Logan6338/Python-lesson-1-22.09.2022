@@ -51,7 +51,7 @@
 # print(a)
 
 # func = 1
-# T = 4       
+# T = 4
 # x = 123
 # print(func<T>(x)) # Тоже тройное неравенство
 
@@ -63,10 +63,10 @@
 
 
 # f = 1 > 2 or 4 < 6
-                    # если хотя бы одно значение верно то будет True
+# если хотя бы одно значение верно то будет True
 # print(f)
 
-f = [1,2,3,4]
+# f = [1,2,3,4]
 # print(f)
 # print(2 in f)  # Будет True так как 2 сожержится в списке, если написать print(not 2 in f) то будет False
 
@@ -76,3 +76,70 @@ f = [1,2,3,4]
 
 # is_odd = not f[0] % 2     # ТОже самое что и предыдущее только более Pythonовкое написание
 # print(is_odd)
+
+# Управляющие конструкции
+# if, if-else
+
+# a = int(input('a = '))
+# b = int(input('b = '))
+# if a > b:
+#     print(a)
+# else:
+#     print(b)
+
+# username = input('Введите имя: ')
+# if username == 'Маша':
+#     print('Ура, это же Маша!')
+# elif username == 'Марина':
+#     print('Я так ждал Вас, Марина!')
+# elif username == 'Ильнар':
+#     print('Ильнар - топ')
+# else:
+#         print('Привет, ', username)
+
+# Управляющие конструкции
+# while
+
+# original = 23
+# inverted = 0
+# while original != 0:
+#     inverted = inverted * 10 + (original % 10)
+#     original //= 10
+# print(inverted)
+
+# Управляющие конструкции
+# while-else
+
+# original = 23
+# inverted = 0
+# while original != 0:
+#     inverted = inverted * 10 + (original % 10)
+#     original //= 10
+#     print(original)
+# else:
+#     print('Пожалуй')
+#     print('хватит )')
+# print(inverted)
+
+# Управляющие конструкции
+# for
+
+# for i in 1,2,3,4,5:
+#     print(i**2)
+
+# list = [1,2,3,4,10,5]
+# for i in list:          # Тоже самое только через список
+#     print(i**2)
+
+# r = range(10)
+# for i in r:
+#     print(i)
+
+# for i in range(10):       # Это тоже самое что и прошлое только без переменной r
+#     print(i)
+
+# for i in range(1, 5):       # С указанием диапазона
+#     print(i)
+
+for i in range(1, 10, 2):       # не четные числа в диапазоне от 1 до 9 так как n-1, а не до 10
+    print(i)
